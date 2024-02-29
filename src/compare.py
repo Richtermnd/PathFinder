@@ -4,10 +4,6 @@ from pathfind.grid import Grid, MazeGrid, RandomSurface
 from pathfind.algorithm import Wave, Dijkstra, AStar
 
 
-
-# def fabric()
-
-
 def compare(factory):
     f = open('results/surface.csv', mode='w', newline='')
     writer = csv.DictWriter(

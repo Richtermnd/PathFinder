@@ -1,6 +1,6 @@
 import math
 import random
-from typing import Self
+from typing_extensions import Self
 from functools import total_ordering
 
 from perlin_noise import PerlinNoise
@@ -159,7 +159,7 @@ class Grid:
         x, y = key
         return self._grid[y][x]
 
-    def __iter__(self) -> Node:
+    def __iter__(self):
         for x in range(self.w):
             for y in range(self.h):
                 yield self[x, y]

@@ -22,7 +22,6 @@ class Action:
 
     def trigger(self, *args, **kwargs):
         if pygame.time.get_ticks() - self.last_trigger > self.delay:
-            print(self.action.func.__name__)
             res = self.action(*args, **kwargs)
             self.last_trigger = pygame.time.get_ticks()
             return res
